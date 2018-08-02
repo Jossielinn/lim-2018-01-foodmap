@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Food Map</title>
+</head>
+
+<body>
+    <section id="content-splash">
+        <div id="splash"></div>
+    </section>
+
+    <div id="map" class="animate-bottom">
+        <h1>Food Map</h1>
+        <div id="content-search">
+            <input type="text" id="autocomplete" placeholder="Busque aqui">
+       <!-- <img id='icon-search' src="img/searchicon.png">-->
+        </div>
+        
+        <div id="content-map"></div>
+        <select >
+            <option value="">Comida</option>
+        </select>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-FuKYYHiQknRVAFoqbXDpByfYd0P5GCg&libraries=places"></script>
+    <script src="../src/location.js"></script>
+    <script src="../src/app.js"></script>
+    <script src="../src/main.js"></script>
+</body>
+
+</html>

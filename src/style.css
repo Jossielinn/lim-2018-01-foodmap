@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*--- Splash 2s ---*/
+#content-splash {
+  width: 100%;
+  height: 100%;
+  background: rgba(211, 104, 104, 0.9);
+  /*background: #4e709d;*/
+}
+#splash,#splash:after{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -32px;
+    border-radius: 50%;
+    z-index: 2
+ }
+#splash {
+    background-color: transparent;
+    border-top: 10px solid rgb(66,139,202);
+    border-right: 10px solid rgba(211, 104, 104, 0.9);
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid rgba(66,139,202,.2);
+    transform: translateZ(0);
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-duration: 1.4s;
+    animation-name: splash-loading
+ }
+@keyframes splash-loading{
+  0% {
+      transform: rotate(0deg)
+  } to {
+      transform: rotate(1turn)
+  }
+}
+
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+
+  
+h1 {
+    font-family: 'Segoe UI';
+    color: rgba(211, 104, 104, 0.9);
+}
+#map {
+    height: 100%;
+    display: none;
+}
+
+#content-map {
+    width: 80%;
+    border: 2px solid rgba(211, 104, 104, 0.9);
+    border-radius: 15px;
+    height: 40%;
+    margin: auto;
+}
+[type=text] {
+    background: #fff;
+    border: none;
+    padding: 15px 32px;
+    font-family: segoe UI;
+    display: inline-block;
+    font-size: 16px;
+    width: 70%;
+    outline: none;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 2%;
+}
+/*[type=text]:focus {
+    background-color: #fff;
+    border-bottom: 3px solid peru;
+}*/
+#autocomplete, 
+#icon-search{
+    width: 50%;
+    height: 10%;
+}
+#content-search {
+    text-align: center;
+    display: inline-flex;
+}
+#icon-search {
+    width: 10%;
+    text-align: right;
+}
