@@ -104,16 +104,4 @@ h1 {
     background-color: #fff;
     border-bottom: 3px solid peru;
 }*/
-#autocomplete, 
-#icon-search{
-    width: 50%;
-    height: 10%;
-}
-#content-search {
-    text-align: center;
-    display: inline-flex;
-}
-#icon-search {
-    width: 10%;
-    text-align: right;
-}
+
